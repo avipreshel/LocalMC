@@ -1,5 +1,5 @@
 # Messaging channel for IPC (Inter Process Communication)
-This project simplifies the usage of shared-memory communication channel. Just create either an Input or Output channel, give them a name and starting sending text or binary messages between two processes.
+This project simplifies the usage of shared-memory communication channel. Just create either an Input or Output channel, give them a name and start sending text or binary messages between two processes.
 
 # Why shared memory
 If your project needs to communicate between processes which will reside on the same machine/OS, then shared memory (aka "named pipes") is the fastest way to go about.
