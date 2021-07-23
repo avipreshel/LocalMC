@@ -4,6 +4,9 @@ This project simplifies the usage of shared-memory communication channel. Just c
 # Why shared memory
 If your project needs to communicate between processes which will reside on the same machine/OS, then shared memory (aka "named pipes") is the fastest way to go about.
 
+# Why not just use shared memory directly, without LocalMC?
+Because then you would need to bother yourself with the synchronizations between the producer/consumer, and also you'll need to take care of the cleanups. It's just too messy.
+
 # Why not just use WCF with named pipes as transport?
 WCF is a general communication framework, so it's got additional abstraction layers which hinder the performance compared to LocalMC. Also, WCF requires lots of setup and multiple lines of code to get it up and running. LocalMC is super simple (sample app included in the solution).
 
